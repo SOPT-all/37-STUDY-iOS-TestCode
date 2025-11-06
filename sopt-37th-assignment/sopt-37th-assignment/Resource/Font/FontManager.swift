@@ -17,7 +17,6 @@ public struct FontProperty {
 public enum FontManager {
     case headB24
     case headB18
-    case headB16
     
     case titleSb18
     
@@ -31,8 +30,6 @@ public enum FontManager {
             return FontProperty(font: .bold, size: 24, lineHeight: 100, kern: -2)
         case .headB18:
             return FontProperty(font: .bold, size: 18, lineHeight: 100, kern: -2)
-        case .headB16:
-            return FontProperty(font: .bold, size: 16, lineHeight: 100, kern: -2)
         case .titleSb18:
             return FontProperty(font: .semibold, size: 18, lineHeight: 100, kern: -3)
         case .bodyR14:

@@ -7,9 +7,6 @@
 
 import UIKit
 
-import SnapKit
-import Then
-
 final class LoginView: BaseView {
     private let navigationBar = BaeminNavigationBar(title: "이메일 또는 아이디로 계속")
     private(set) var idTextField = BaeminTextField(textfieldType: .email)

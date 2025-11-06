@@ -30,7 +30,7 @@ final class WelcomeViewController: BaseViewController {
     
     override func setAddTarget() {
         rootView.navigationBar.backButton.addTarget(self, action: #selector(backButtonDidTap), for: .touchUpInside)
-        rootView.confirmButton.addTarget(self, action: #selector(confirmButtonDidTap), for: .touchUpInside)
+        rootView.backButton.addTarget(self, action: #selector(backButtonDidTap), for: .touchUpInside)
     }
     
     override func setDelegate() {
@@ -42,11 +42,5 @@ extension WelcomeViewController: BaeminNavigationBarDelegate {
     @objc
     func backButtonDidTap() {
         navigationController?.popViewController(animated: true)
-    }
-    
-    @objc
-    private func confirmButtonDidTap() {
-        let viewController = UINavigationController(rootViewController: BaeminFeedViewController())
-        self.view.window?.rootViewController = viewController
     }
 }

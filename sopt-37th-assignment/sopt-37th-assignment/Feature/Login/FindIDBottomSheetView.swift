@@ -7,9 +7,6 @@
 
 import UIKit
 
-import SnapKit
-import Then
-
 final class FindIDBottomSheetView: UIView {
     private let titleLabel = UILabel()
     private(set) var textField = UITextField()
