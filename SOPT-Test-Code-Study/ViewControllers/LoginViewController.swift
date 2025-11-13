@@ -9,7 +9,70 @@ import UIKit
 import SnapKit
 import Then
 
+final class LoginViewControllerTestHelper {
+    
+    enum TextFieldEnum {
+        case emailId, password, all
+    }
+    
+    let loginButton: ConfirmButton
+    let emailIdTextField: UITextField
+    let passwordTextField: UITextField
+    
+    init(loginButton: ConfirmButton, emailIdTextField: UITextField, passwordTextField: UITextField) {
+        self.loginButton = loginButton
+        self.emailIdTextField = emailIdTextField
+        self.passwordTextField = passwordTextField
+    }
+    
+    // 입력 값 설정
+    func input(text: String, at textField: TextFieldEnum) {
+        switch textField {
+        case .emailId:
+            self.emailIdTextField.text = text
+        case .password:
+            self.passwordTextField.text = text
+        case .all:
+            self.emailIdTextField.text = text
+            self.passwordTextField.text = text
+        }
+    }
+    
+    // 모두 삭제
+    func deleteAll(at textField: TextFieldEnum) {
+        switch textField {
+        case .emailId:
+            self.emailIdTextField.text = ""
+        case .password:
+            self.passwordTextField.text = ""
+        case .all:
+            self.emailIdTextField.text = ""
+            self.passwordTextField.text = ""
+        }
+    }
+    
+    // 입력, 삭제, 붙여넣기, 일부삭제 등을 수행할 수 있음
+    func textField(at textField: TextFieldEnum, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        switch textField {
+        case .emailId:
+            return self.emailIdTextField.delegate?.textField?(self.emailIdTextField, shouldChangeCharactersIn: range, replacementString: string) ?? false
+        case .password:
+            return self.passwordTextField.delegate?.textField?(self.passwordTextField, shouldChangeCharactersIn: range, replacementString: string) ?? false
+        case .all:
+            return self.emailIdTextField.delegate?.textField?(self.emailIdTextField, shouldChangeCharactersIn: range, replacementString: string) ?? false && self.passwordTextField.delegate?.textField?(self.passwordTextField, shouldChangeCharactersIn: range, replacementString: string) ?? false
+        }
+    }
+    
+    // 버튼 활성화 여부 확인
+    func checkLoginButtonIsEnabled() -> Bool {
+        return loginButton.isEnabled
+    }
+    
+}
+
 class LoginViewController: UIViewController, WelcomeViewControllerDelegate {
+    
+    var testHelper: LoginViewControllerTestHelper?
     
     private lazy var customNavigationBar = CustomNavigationBar().then {
         $0.configure(title: "이메일 또는 아이디로 계속", delegate: self)
@@ -53,6 +116,10 @@ class LoginViewController: UIViewController, WelcomeViewControllerDelegate {
         configureUI()
         hideKeyboardWhenTappedAround()
         self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    func setTestEnvironment() {
+        self.testHelper = LoginViewControllerTestHelper(loginButton: self.loginButton, emailIdTextField: self.emailIdTextField, passwordTextField: self.passwordTextField)
     }
     
     func didTapGoBackButton() {
@@ -118,11 +185,13 @@ extension LoginViewController: UITextFieldDelegate {
     // 버튼의 활성화 여부를 결정
     func checkLoginButtonValid(_ textField: UITextField, range: NSRange, replacementString string: String) {
         
-        print("\(textField.text) \(string) \(range)")
+        print("checkLoginButtonValid started")
+        print("email : \(emailIdTextField.text), password: \(passwordTextField.text)")
         if !string.isEmpty // 추가된 것에 대한 동작
             && ((textField == emailIdTextField && passwordTextField.text?.isEmpty == false)
             || (textField == passwordTextField && emailIdTextField.text?.isEmpty == false))
         {
+            print("\(#function) button enabled")
             loginButton.setAvailableMode()
         }
         else if
@@ -130,8 +199,10 @@ extension LoginViewController: UITextFieldDelegate {
             && range.location == 0
             && range.length == textField.text?.count
         {
+            print("\(#function) button invalid")
             loginButton.setUnavailableMode()
         }
+        print("checkLoginButtonValid ended")
     }
 }
 
