@@ -11,7 +11,18 @@
 		4B870E372EB3A59500F55AB6 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 4B870E362EB3A59500F55AB6 /* Then */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4B4031592EC794BF00146D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B870D242EB399E300F55AB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B870D2B2EB399E300F55AB6;
+			remoteInfo = "spot-37th-assignment";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4B4031552EC794BF00146D39 /* spot-37th-assignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spot-37th-assignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B870D2C2EB399E300F55AB6 /* spot-37th-assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spot-37th-assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -26,6 +37,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		4B4031562EC794BF00146D39 /* spot-37th-assignmentTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "spot-37th-assignmentTests";
+			sourceTree = "<group>";
+		};
 		4B870D2E2EB399E300F55AB6 /* spot-37th-assignment */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -37,6 +53,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4B4031522EC794BF00146D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B870D292EB399E300F55AB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				4B870D2E2EB399E300F55AB6 /* spot-37th-assignment */,
+				4B4031562EC794BF00146D39 /* spot-37th-assignmentTests */,
 				4B870D2D2EB399E300F55AB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				4B870D2C2EB399E300F55AB6 /* spot-37th-assignment.app */,
+				4B4031552EC794BF00146D39 /* spot-37th-assignmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +93,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4B4031542EC794BF00146D39 /* spot-37th-assignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B40315B2EC794BF00146D39 /* Build configuration list for PBXNativeTarget "spot-37th-assignmentTests" */;
+			buildPhases = (
+				4B4031512EC794BF00146D39 /* Sources */,
+				4B4031522EC794BF00146D39 /* Frameworks */,
+				4B4031532EC794BF00146D39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B40315A2EC794BF00146D39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4B4031562EC794BF00146D39 /* spot-37th-assignmentTests */,
+			);
+			name = "spot-37th-assignmentTests";
+			packageProductDependencies = (
+			);
+			productName = "spot-37th-assignmentTests";
+			productReference = 4B4031552EC794BF00146D39 /* spot-37th-assignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4B870D2B2EB399E300F55AB6 /* spot-37th-assignment */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B870D3F2EB399E500F55AB6 /* Build configuration list for PBXNativeTarget "spot-37th-assignment" */;
@@ -99,9 +147,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2600;
-				LastUpgradeCheck = 2600;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
+					4B4031542EC794BF00146D39 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 4B870D2B2EB399E300F55AB6;
+					};
 					4B870D2B2EB399E300F55AB6 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
@@ -126,11 +178,19 @@
 			projectRoot = "";
 			targets = (
 				4B870D2B2EB399E300F55AB6 /* spot-37th-assignment */,
+				4B4031542EC794BF00146D39 /* spot-37th-assignmentTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4B4031532EC794BF00146D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B870D2A2EB399E300F55AB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +201,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4B4031512EC794BF00146D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B870D282EB399E300F55AB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,7 +217,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4B40315A2EC794BF00146D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B870D2B2EB399E300F55AB6 /* spot-37th-assignment */;
+			targetProxy = 4B4031592EC794BF00146D39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4B40315C2EC794BF00146D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = NZJWJ35U9D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaesuneo.spot-37th-assignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spot-37th-assignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/spot-37th-assignment";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		4B40315D2EC794BF00146D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = NZJWJ35U9D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaesuneo.spot-37th-assignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spot-37th-assignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/spot-37th-assignment";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
 		4B870D402EB399E500F55AB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -165,6 +294,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -196,6 +326,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -272,6 +403,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -329,6 +461,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -337,6 +470,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4B40315B2EC794BF00146D39 /* Build configuration list for PBXNativeTarget "spot-37th-assignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B40315C2EC794BF00146D39 /* Debug */,
+				4B40315D2EC794BF00146D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4B870D272EB399E300F55AB6 /* Build configuration list for PBXProject "spot-37th-assignment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
