@@ -11,8 +11,27 @@
 		5101371C2EA4BE0000C021CE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5101371B2EA4BE0000C021CE /* SnapKit */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		51C9C7782EC8B82F009925DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510136E72EA4BD8100C021CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 510136EE2EA4BD8100C021CE;
+			remoteInfo = "sopt-37th-assignment";
+		};
+		51C9C7852EC8B94D009925DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510136E72EA4BD8100C021CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 510136EE2EA4BD8100C021CE;
+			remoteInfo = "sopt-37th-assignment";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		510136EF2EA4BD8100C021CE /* sopt-37th-assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sopt-37th-assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51C9C7742EC8B82F009925DF /* sopt-37th-assignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sopt-37th-assignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51C9C7812EC8B94D009925DF /* sopt-37th-TestCode.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sopt-37th-TestCode.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -34,6 +53,11 @@
 			path = "sopt-37th-assignment";
 			sourceTree = "<group>";
 		};
+		51C9C7822EC8B94D009925DF /* sopt-37th-TestCode */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "sopt-37th-TestCode";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +70,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51C9C7712EC8B82F009925DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C9C77E2EC8B94D009925DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -53,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				510136F12EA4BD8100C021CE /* sopt-37th-assignment */,
+				51C9C7822EC8B94D009925DF /* sopt-37th-TestCode */,
 				510136F02EA4BD8100C021CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				510136EF2EA4BD8100C021CE /* sopt-37th-assignment.app */,
+				51C9C7742EC8B82F009925DF /* sopt-37th-assignmentTests.xctest */,
+				51C9C7812EC8B94D009925DF /* sopt-37th-TestCode.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +133,49 @@
 			productReference = 510136EF2EA4BD8100C021CE /* sopt-37th-assignment.app */;
 			productType = "com.apple.product-type.application";
 		};
+		51C9C7732EC8B82F009925DF /* sopt-37th-assignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51C9C77A2EC8B82F009925DF /* Build configuration list for PBXNativeTarget "sopt-37th-assignmentTests" */;
+			buildPhases = (
+				51C9C7702EC8B82F009925DF /* Sources */,
+				51C9C7712EC8B82F009925DF /* Frameworks */,
+				51C9C7722EC8B82F009925DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51C9C7792EC8B82F009925DF /* PBXTargetDependency */,
+			);
+			name = "sopt-37th-assignmentTests";
+			packageProductDependencies = (
+			);
+			productName = "sopt-37th-assignmentTests";
+			productReference = 51C9C7742EC8B82F009925DF /* sopt-37th-assignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		51C9C7802EC8B94D009925DF /* sopt-37th-TestCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51C9C7872EC8B94D009925DF /* Build configuration list for PBXNativeTarget "sopt-37th-TestCode" */;
+			buildPhases = (
+				51C9C77D2EC8B94D009925DF /* Sources */,
+				51C9C77E2EC8B94D009925DF /* Frameworks */,
+				51C9C77F2EC8B94D009925DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51C9C7862EC8B94D009925DF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				51C9C7822EC8B94D009925DF /* sopt-37th-TestCode */,
+			);
+			name = "sopt-37th-TestCode";
+			packageProductDependencies = (
+			);
+			productName = "sopt-37th-TestCode";
+			productReference = 51C9C7812EC8B94D009925DF /* sopt-37th-TestCode.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +188,14 @@
 				TargetAttributes = {
 					510136EE2EA4BD8100C021CE = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					51C9C7732EC8B82F009925DF = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 510136EE2EA4BD8100C021CE;
+					};
+					51C9C7802EC8B94D009925DF = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 510136EE2EA4BD8100C021CE;
 					};
 				};
 			};
@@ -126,12 +218,28 @@
 			projectRoot = "";
 			targets = (
 				510136EE2EA4BD8100C021CE /* sopt-37th-assignment */,
+				51C9C7732EC8B82F009925DF /* sopt-37th-assignmentTests */,
+				51C9C7802EC8B94D009925DF /* sopt-37th-TestCode */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		510136ED2EA4BD8100C021CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C9C7722EC8B82F009925DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C9C77F2EC8B94D009925DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -148,7 +256,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51C9C7702EC8B82F009925DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C9C77D2EC8B94D009925DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51C9C7792EC8B82F009925DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 510136EE2EA4BD8100C021CE /* sopt-37th-assignment */;
+			targetProxy = 51C9C7782EC8B82F009925DF /* PBXContainerItemProxy */;
+		};
+		51C9C7862EC8B94D009925DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 510136EE2EA4BD8100C021CE /* sopt-37th-assignment */;
+			targetProxy = 51C9C7852EC8B94D009925DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		510137032EA4BD8200C021CE /* Debug */ = {
@@ -324,6 +459,78 @@
 			};
 			name = Release;
 		};
+		51C9C77B2EC8B82F009925DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CG37U6CMKP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nayeon.sopt-37th-assignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sopt-37th-assignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sopt-37th-assignment";
+			};
+			name = Debug;
+		};
+		51C9C77C2EC8B82F009925DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CG37U6CMKP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nayeon.sopt-37th-assignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sopt-37th-assignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sopt-37th-assignment";
+			};
+			name = Release;
+		};
+		51C9C7882EC8B94D009925DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CG37U6CMKP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nayeon.sopt-37th-TestCode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sopt-37th-assignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sopt-37th-assignment";
+			};
+			name = Debug;
+		};
+		51C9C7892EC8B94D009925DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CG37U6CMKP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nayeon.sopt-37th-TestCode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sopt-37th-assignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sopt-37th-assignment";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -341,6 +548,24 @@
 			buildConfigurations = (
 				510137032EA4BD8200C021CE /* Debug */,
 				510137042EA4BD8200C021CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51C9C77A2EC8B82F009925DF /* Build configuration list for PBXNativeTarget "sopt-37th-assignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51C9C77B2EC8B82F009925DF /* Debug */,
+				51C9C77C2EC8B82F009925DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51C9C7872EC8B94D009925DF /* Build configuration list for PBXNativeTarget "sopt-37th-TestCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51C9C7882EC8B94D009925DF /* Debug */,
+				51C9C7892EC8B94D009925DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
