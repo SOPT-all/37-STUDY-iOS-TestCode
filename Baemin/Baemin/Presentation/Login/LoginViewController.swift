@@ -16,19 +16,19 @@ final class LoginViewController: BaseViewController {
     
     private let navigationBar = NavigationBar()
     
-    private let emailField = LoginTextField(
+    lazy var emailField = LoginTextField(
         type: .id,
         labelText: "이메일 아이디",
         placeholderText: "이메일을 입력해주세요"
     )
     
-    private let passwordField = LoginTextField(
+    lazy var passwordField = LoginTextField(
         type: .password,
         labelText: "비밀번호",
         placeholderText: "비밀번호를 입력해주세요"
     )
     
-    private let loginButton = CTAButton(title: "로그인", isActive: false, size: .large)
+    lazy var loginButton = CTAButton(title: "로그인", isActive: false, size: .large)
     
     private let findAccountButton = UIButton(type: .system).then {
         var config = UIButton.Configuration.plain()
