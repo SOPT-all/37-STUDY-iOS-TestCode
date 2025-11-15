@@ -14,10 +14,9 @@ protocol BottomSheetDelegate: AnyObject {
 class MainViewController: UIViewController {
 
     // MARK: - Properties
-    
-    private let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-    private let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8,}$"
-    
+
+    private let validator = LoginValidator()
+
     private lazy var tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleResetIdTapped))
 
     private var titleLabel: UILabel = {
@@ -198,10 +197,9 @@ class MainViewController: UIViewController {
                 sheet.prefersGrabberVisible = true
                 sheet.preferredCornerRadius = 16
                 sheet.largestUndimmedDetentIdentifier = nil
-                sheet.prefersScrollingExpandsWhenScrolledToEdge = false // 스크롤로 시트 확장 방지
+                sheet.prefersScrollingExpandsWhenScrolledToEdge = false
                 sheet.prefersEdgeAttachedInCompactHeight = true
-                // 화면 세로가 짧은경우 화면 가장자리에 붙음
-                sheet.widthFollowsPreferredContentSizeWhenEdgeAttached = true // 가로폭 자동 조절
+                sheet.widthFollowsPreferredContentSizeWhenEdgeAttached = true 
             }
             
             present(viewControllerToPresent, animated: true)
@@ -209,9 +207,9 @@ class MainViewController: UIViewController {
     
     @objc
     private func handleLoginButtonTapped() {
-        
-        let isEmailValid = isValidEmail(emailTextField.text)
-        let isPasswordValid = isValidPassword(passwordTextField.text)
+
+        let isEmailValid = validator.isValidEmail(emailTextField.text)
+        let isPasswordValid = validator.isValidPassword(passwordTextField.text)
         
         if !isEmailValid {
             if !isPasswordValid {
@@ -268,19 +266,7 @@ class MainViewController: UIViewController {
         loginButton.isEnabled = isEnabled
         loginButton.backgroundColor = backgroundColor
     }
-    
-    private func isValidEmail(_ string: String?) -> Bool {
-        guard let string = string else { return false }
-        
-        return string.range(of: self.emailRegex, options: .regularExpression) != nil
-    }
-    
-    private func isValidPassword(_ string: String?) -> Bool {
-        guard let string = string else { return false }
-        
-        return string.range(of: self.passwordRegex, options: .regularExpression) != nil
-    }
-    
+
     private func checkIsFormValid(message: String, title: String) {
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)

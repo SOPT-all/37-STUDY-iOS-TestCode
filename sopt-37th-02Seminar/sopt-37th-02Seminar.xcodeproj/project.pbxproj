@@ -15,6 +15,16 @@
 		1E6F3BA62EA38B3D007B5D26 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E6F3BA52EA38B3D007B5D26 /* SnapKit */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1EC085782EC8A6E1005FCD59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E6F3B6F2EA35E91007B5D26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E6F3B762EA35E91007B5D26;
+			remoteInfo = "sopt-37th-02Seminar";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1E5097CF2EAE396A00DA0C45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E5097D02EAE396A00DA0C45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -22,6 +32,7 @@
 		1E5097D42EAE396A00DA0C45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1E5097D72EAE396A00DA0C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E6F3B772EA35E91007B5D26 /* sopt-37th-02Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sopt-37th-02Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC085742EC8A6E1005FCD59 /* sopt-37th-02SeminarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sopt-37th-02SeminarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +56,11 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		1EC085752EC8A6E1005FCD59 /* sopt-37th-02SeminarTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "sopt-37th-02SeminarTests";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +73,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1EC085712EC8A6E1005FCD59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +89,7 @@
 				1E0A9AC32EB3CFC6005BAAE7 /* SubClassing */,
 				1E50980C2EAE41CB00DA0C45 /* Extension */,
 				1E5098072EAE417800DA0C45 /* sopt-37th-assignment */,
+				1EC085752EC8A6E1005FCD59 /* sopt-37th-02SeminarTests */,
 				1E6F3B782EA35E91007B5D26 /* Products */,
 				1E5098942EAE9BB500DA0C45 /* Font */,
 				1E5097D42EAE396A00DA0C45 /* SceneDelegate.swift */,
@@ -80,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1E6F3B772EA35E91007B5D26 /* sopt-37th-02Seminar.app */,
+				1EC085742EC8A6E1005FCD59 /* sopt-37th-02SeminarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +139,29 @@
 			productReference = 1E6F3B772EA35E91007B5D26 /* sopt-37th-02Seminar.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1EC085732EC8A6E1005FCD59 /* sopt-37th-02SeminarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EC0857C2EC8A6E1005FCD59 /* Build configuration list for PBXNativeTarget "sopt-37th-02SeminarTests" */;
+			buildPhases = (
+				1EC085702EC8A6E1005FCD59 /* Sources */,
+				1EC085712EC8A6E1005FCD59 /* Frameworks */,
+				1EC085722EC8A6E1005FCD59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EC085792EC8A6E1005FCD59 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1EC085752EC8A6E1005FCD59 /* sopt-37th-02SeminarTests */,
+			);
+			name = "sopt-37th-02SeminarTests";
+			packageProductDependencies = (
+			);
+			productName = "sopt-37th-02SeminarTests";
+			productReference = 1EC085742EC8A6E1005FCD59 /* sopt-37th-02SeminarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +174,10 @@
 				TargetAttributes = {
 					1E6F3B762EA35E91007B5D26 = {
 						CreatedOnToolsVersion = 26.0.1;
+					};
+					1EC085732EC8A6E1005FCD59 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 1E6F3B762EA35E91007B5D26;
 					};
 				};
 			};
@@ -148,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				1E6F3B762EA35E91007B5D26 /* sopt-37th-02Seminar */,
+				1EC085732EC8A6E1005FCD59 /* sopt-37th-02SeminarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -159,6 +212,13 @@
 			files = (
 				1E5097DB2EAE396A00DA0C45 /* Assets.xcassets in Resources */,
 				1E5097DD2EAE396A00DA0C45 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC085722EC8A6E1005FCD59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +234,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1EC085702EC8A6E1005FCD59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EC085792EC8A6E1005FCD59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E6F3B762EA35E91007B5D26 /* sopt-37th-02Seminar */;
+			targetProxy = 1EC085782EC8A6E1005FCD59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1E5097D22EAE396A00DA0C45 /* LaunchScreen.storyboard */ = {
@@ -367,6 +442,48 @@
 			};
 			name = Release;
 		};
+		1EC0857A2EC8A6E1005FCD59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5RA2A76S4S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "come.Jin.sopt-37th-02SeminarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sopt-37th-02Seminar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sopt-37th-02Seminar";
+			};
+			name = Debug;
+		};
+		1EC0857B2EC8A6E1005FCD59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5RA2A76S4S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "come.Jin.sopt-37th-02SeminarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sopt-37th-02Seminar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sopt-37th-02Seminar";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -384,6 +501,15 @@
 			buildConfigurations = (
 				1E6F3B8B2EA35E92007B5D26 /* Debug */,
 				1E6F3B8C2EA35E92007B5D26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EC0857C2EC8A6E1005FCD59 /* Build configuration list for PBXNativeTarget "sopt-37th-02SeminarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC0857A2EC8A6E1005FCD59 /* Debug */,
+				1EC0857B2EC8A6E1005FCD59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
