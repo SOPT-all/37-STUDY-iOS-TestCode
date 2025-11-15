@@ -46,8 +46,8 @@ final class sopt_37th_02SeminarTests: XCTestCase {
             "@example.com",
             "user@",
             "user@domain",
-            "",
             "user name@example.com",
+            "",
             nil
         ]
 
