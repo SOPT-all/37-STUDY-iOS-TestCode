@@ -7,11 +7,22 @@
 
 import Combine
 
-class CalculatorViewModel {
+protocol ViewModelProtocol {
+    
+    associatedtype Input
+    associatedtype Output
+    
+    func transform(input: Input) -> Output
+    
+}
+
+class CalculatorViewModel: ViewModelProtocol {
+    
     struct Input {
         let tapNumber = PassthroughSubject<Double, Never>()
         let tapOperator = PassthroughSubject<CalcOperator, Never>()
         let tapEqual = PassthroughSubject<Void, Never>()
+        let tapClear = PassthroughSubject<Void, Never>()
     }
     
     struct Output {
@@ -21,14 +32,63 @@ class CalculatorViewModel {
     private let service: CalculatorServiceType // DI 적용
     private var cancellables = Set<AnyCancellable>()
     
+    private var lhs: Double?
+    private var currentOperator: CalcOperator?
+    private var rhs: Double?
+    
     init(service: CalculatorServiceType = CalculatorService()) {
         self.service = service
-        // Input을 받아 로직 처리 후 Output으로 전달하는 바인딩 구현
     }
     
     func transform(input: Input) -> Output {
         let output = Output()
-        // Combine 연산자(combineLatest 등)를 활용한 로직
+        
+        input.tapNumber
+            .sink { [weak self] number in
+                guard let self = self else { return }
+                if self.currentOperator == nil {
+                    self.lhs = number
+                } else {
+                    self.rhs = number
+                }
+                output.displayText.send("\(number)")
+            }
+            .store(in: &cancellables)
+        
+        input.tapOperator
+            .sink { [weak self] op in
+                self?.currentOperator = op
+            }
+            .store(in: &cancellables)
+        
+        input.tapEqual
+            .sink { [weak self] in
+                guard let self = self,
+                      let lhs = self.lhs,
+                      let rhs = self.rhs,
+                      let op = self.currentOperator else { return }
+                
+                let result = self.service.calculate(lhs: lhs, rhs: rhs, operator: op)
+                let resultString = result.isNaN ? "Error" : "\(result)"
+                output.displayText.send(resultString)
+                
+                // 다음 연산을 위해 상태 업데이트
+                self.lhs = result
+                self.rhs = nil
+                self.currentOperator = nil
+            }
+            .store(in: &cancellables)
+        
+        // AC
+        input.tapClear
+            .sink { [weak self] in
+                self?.lhs = nil
+                self?.rhs = nil
+                self?.currentOperator = nil
+                output.displayText.send("0")
+            }
+            .store(in: &cancellables)
+        
         return output
     }
 }
