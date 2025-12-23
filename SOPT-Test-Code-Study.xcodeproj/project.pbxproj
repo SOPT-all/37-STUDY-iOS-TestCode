@@ -27,6 +27,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		63AA094E2EFAC30A0096D8DB /* Exceptions for "SOPT-Test-Code-StudyTests" folder in "SOPT-Test-Code-Study" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CalculatorServiceTests.swift,
+			);
+			target = 63D7DF292EC2EE2700F7C4D0 /* SOPT-Test-Code-Study */;
+		};
 		63D7DF3C2EC2EE2900F7C4D0 /* Exceptions for "SOPT-Test-Code-Study" folder in "SOPT-Test-Code-Study" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -39,6 +46,9 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		63C525922EC591D1002440C5 /* SOPT-Test-Code-StudyTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				63AA094E2EFAC30A0096D8DB /* Exceptions for "SOPT-Test-Code-StudyTests" folder in "SOPT-Test-Code-Study" target */,
+			);
 			path = "SOPT-Test-Code-StudyTests";
 			sourceTree = "<group>";
 		};
