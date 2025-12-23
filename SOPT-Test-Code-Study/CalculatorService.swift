@@ -12,8 +12,19 @@ protocol CalculatorServiceType {
 }
 
 class CalculatorService: CalculatorServiceType {
+    
     func calculate(lhs: Double, rhs: Double, operator: CalcOperator) -> Double {
-        // 실제 사칙연산 로직 구현
-        return 0
+        switch `operator` {
+        case .add:
+            return lhs + rhs
+        case .subtract:
+            return lhs - rhs
+        case .multiply:
+            return lhs * rhs
+        case .divide:
+            // Edge Case
+            // nan : Not a Number를 의미, 무한도 쓸 수 있다.
+            return rhs == 0 ? Double.nan : lhs / rhs
+        }
     }
 }

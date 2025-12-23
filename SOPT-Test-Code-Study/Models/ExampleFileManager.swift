@@ -9,7 +9,7 @@ import Foundation
 
 class ExampleFileManager {
     
-    var shouldSucceed: Bool = false
+    var shouldSucceed: Bool = true
     var mockData = "Mock file content for testing."
     var mockError: Error? = nil
     
