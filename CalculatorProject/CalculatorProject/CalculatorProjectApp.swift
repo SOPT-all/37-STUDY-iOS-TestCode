@@ -1,14 +1,14 @@
 //
-//  Testcode_lastApp.swift
-//  Testcode-last
+//  CalculatorProjectApp.swift
+//  CalculatorProject
 //
-//  Created by JIN on 12/23/25.
+//  Created by JIN on 12/25/25.
 //
 
 import SwiftUI
 
 @main
-struct Testcode_lastApp: App {
+struct CalculatorProjectApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
