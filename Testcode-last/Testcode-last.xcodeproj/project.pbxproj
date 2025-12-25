@@ -35,14 +35,9 @@
 			path = "Testcode-last";
 			sourceTree = "<group>";
 		};
-		1ECDD3DD2EFB1FEB005A9325 /* Testcode-lastTest */ = {
+		1ECDD4B82EFD670C005A9325 /* Testcode-last-test */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Testcode-lastTest";
-			sourceTree = "<group>";
-		};
-		1ECDD3EA2EFB2026005A9325 /* Testcode-lastUITest */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Testcode-lastUITest";
+			path = "Testcode-last-test";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +70,8 @@
 		1ECDD30D2EFAB723005A9325 = {
 			isa = PBXGroup;
 			children = (
+				1ECDD4B82EFD670C005A9325 /* Testcode-last-test */,
 				1ECDD3182EFAB723005A9325 /* Testcode-last */,
-				1ECDD3DD2EFB1FEB005A9325 /* Testcode-lastTest */,
-				1ECDD3EA2EFB2026005A9325 /* Testcode-lastUITest */,
 				1ECDD3172EFAB723005A9325 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +103,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				1ECDD3182EFAB723005A9325 /* Testcode-last */,
+				1ECDD4B82EFD670C005A9325 /* Testcode-last-test */,
 			);
 			name = "Testcode-last";
 			packageProductDependencies = (
@@ -130,9 +125,6 @@
 			dependencies = (
 				1ECDD3E12EFB1FEB005A9325 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				1ECDD3DD2EFB1FEB005A9325 /* Testcode-lastTest */,
-			);
 			name = "Testcode-lastTest";
 			packageProductDependencies = (
 			);
@@ -152,9 +144,6 @@
 			);
 			dependencies = (
 				1ECDD3F02EFB2026005A9325 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				1ECDD3EA2EFB2026005A9325 /* Testcode-lastUITest */,
 			);
 			name = "Testcode-lastUITest";
 			packageProductDependencies = (
