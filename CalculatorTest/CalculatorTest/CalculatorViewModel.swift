@@ -11,7 +11,12 @@ import Combine
 class CalculatorViewModel: ObservableObject {
     @Published private(set) var displayText: String = "0"
     
-    private var model = CalculatorModel()
+    private var model: CalculatorModelProtocol
+    
+    init(model: CalculatorModelProtocol = CalculatorModel()) {
+        self.model = model
+        updateDisplay()
+    }
     
     func buttonTapped(_ button: CalculatorButton) {
         switch button {

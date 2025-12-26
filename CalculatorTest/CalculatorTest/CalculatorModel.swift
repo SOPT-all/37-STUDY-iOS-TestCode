@@ -11,7 +11,18 @@ enum CalculatorOperation {
     case add, subtract, multiply, divide, none
 }
 
-struct CalculatorModel {
+// Protocol for dependency injection
+protocol CalculatorModelProtocol {
+    var displayValue: String { get }
+    mutating func inputNumber(_ number: String)
+    mutating func inputOperation(_ operation: CalculatorOperation)
+    mutating func performOperation()
+    mutating func reset()
+    mutating func toggleSign()
+    mutating func percentage()
+}
+
+struct CalculatorModel: CalculatorModelProtocol {
     private var accumulator: Double = 0
     private var currentOperation: CalculatorOperation = .none
     private var isNewNumber: Bool = true
