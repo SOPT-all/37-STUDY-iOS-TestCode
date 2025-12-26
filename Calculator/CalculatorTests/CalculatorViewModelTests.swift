@@ -8,7 +8,7 @@
 
 import XCTest
 
-@testable import CalculatorApp
+@testable import Calculator
 
 private struct StubEngine: CalculatorEngine {
     func reduce(state: CalculatorState, action: CalculatorAction) -> CalculatorState {

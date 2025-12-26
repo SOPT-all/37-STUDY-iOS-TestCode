@@ -8,7 +8,7 @@
 
 import XCTest
 
-@testable import CalculatorApp
+@testable import Calculator
 
 final class CalculatorEngineTests: XCTestCase {
 

@@ -7,7 +7,7 @@
 
 import XCTest
 
-@testable import CalculatorApp
+@testable import Calculator
 
 final class CalculatorUITests: XCTestCase {
 
