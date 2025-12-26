@@ -11,7 +11,18 @@
 		33ED6F252EB093AE0023190D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 33ED6F242EB093AE0023190D /* Then */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3326EE1E2EBE0E0500668ECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33ED6E912EB088070023190D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33ED6E982EB088070023190D;
+			remoteInfo = "sopt-37th-Assignment";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3326EE1A2EBE0E0500668ECC /* sopt-37th-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sopt-37th-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33ED6E992EB088070023190D /* sopt-37th-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sopt-37th-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -26,6 +37,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		3326EE1B2EBE0E0500668ECC /* sopt-37th-AssignmentTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "sopt-37th-AssignmentTests";
+			sourceTree = "<group>";
+		};
 		33ED6E9B2EB088070023190D /* sopt-37th-Assignment */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -37,6 +53,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3326EE172EBE0E0500668ECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33ED6E962EB088070023190D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				33ED6E9B2EB088070023190D /* sopt-37th-Assignment */,
+				3326EE1B2EBE0E0500668ECC /* sopt-37th-AssignmentTests */,
 				33ED6E9A2EB088070023190D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				33ED6E992EB088070023190D /* sopt-37th-Assignment.app */,
+				3326EE1A2EBE0E0500668ECC /* sopt-37th-AssignmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +93,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3326EE192EBE0E0500668ECC /* sopt-37th-AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3326EE202EBE0E0500668ECC /* Build configuration list for PBXNativeTarget "sopt-37th-AssignmentTests" */;
+			buildPhases = (
+				3326EE162EBE0E0500668ECC /* Sources */,
+				3326EE172EBE0E0500668ECC /* Frameworks */,
+				3326EE182EBE0E0500668ECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3326EE1F2EBE0E0500668ECC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3326EE1B2EBE0E0500668ECC /* sopt-37th-AssignmentTests */,
+			);
+			name = "sopt-37th-AssignmentTests";
+			packageProductDependencies = (
+			);
+			productName = "sopt-37th-AssignmentTests";
+			productReference = 3326EE1A2EBE0E0500668ECC /* sopt-37th-AssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		33ED6E982EB088070023190D /* sopt-37th-Assignment */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33ED6EAC2EB0880A0023190D /* Build configuration list for PBXNativeTarget "sopt-37th-Assignment" */;
@@ -102,6 +150,10 @@
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
+					3326EE192EBE0E0500668ECC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 33ED6E982EB088070023190D;
+					};
 					33ED6E982EB088070023190D = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -126,11 +178,19 @@
 			projectRoot = "";
 			targets = (
 				33ED6E982EB088070023190D /* sopt-37th-Assignment */,
+				3326EE192EBE0E0500668ECC /* sopt-37th-AssignmentTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3326EE182EBE0E0500668ECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33ED6E972EB088070023190D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +201,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3326EE162EBE0E0500668ECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33ED6E952EB088070023190D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,7 +217,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3326EE1F2EBE0E0500668ECC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33ED6E982EB088070023190D /* sopt-37th-Assignment */;
+			targetProxy = 3326EE1E2EBE0E0500668ECC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		3326EE212EBE0E0500668ECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yeonnies.sopt-37th-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sopt-37th-Assignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sopt-37th-Assignment";
+			};
+			name = Debug;
+		};
+		3326EE222EBE0E0500668ECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yeonnies.sopt-37th-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sopt-37th-Assignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sopt-37th-Assignment";
+			};
+			name = Release;
+		};
 		33ED6EAD2EB0880A0023190D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -325,6 +434,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3326EE202EBE0E0500668ECC /* Build configuration list for PBXNativeTarget "sopt-37th-AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3326EE212EBE0E0500668ECC /* Debug */,
+				3326EE222EBE0E0500668ECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		33ED6E942EB088070023190D /* Build configuration list for PBXProject "sopt-37th-Assignment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -12,7 +12,7 @@ import SnapKit
 
 final class LoginViewController: BaseUIViewController {
     private let navigationBar = BaeminNavigationBar(title: "이메일 또는 아이디로 계속")
-    private lazy var idTextField = BaeminIdTextField()
+    lazy var idTextField = BaeminIdTextField()
     private lazy var passwordTextField = BaeminPasswordTextField()
     
     private lazy var loginButton = BaeminButton().then {
