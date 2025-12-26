@@ -229,9 +229,6 @@ final class CalculatorViewModel: ObservableObject {
             case .operator:
                 _ = stack.popLast()
             }
-            if case .num = last {
-                stack.append(.operator(.modular))
-            }
         case .clear:
             stack.removeAll()
         }
