@@ -9,7 +9,7 @@ import UIKit
 
 final class LoginViewController: BaseViewController {
     
-    private let rootView = LoginView()
+    private(set) var rootView = LoginView()
     
     override func loadView() {
         view = rootView
@@ -68,7 +68,7 @@ extension LoginViewController {
     }
     
     @objc
-    private func textFieldDidChange() {
+    func textFieldDidChange() {
         if let idText = rootView.idTextField.textField.text,
             let passwordText = rootView.passwordTextField.textField.text {
             rootView.loginButton.isEnabled = !idText.isEmpty && !passwordText.isEmpty
