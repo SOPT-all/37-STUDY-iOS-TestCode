@@ -7,85 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A424C26C2EAE8F68006E0F1E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A424C26B2EAE8F68006E0F1E /* SnapKit */; };
-		A424C26F2EAE8F72006E0F1E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A424C26E2EAE8F72006E0F1E /* Then */; };
+		A4AAAC0A2EFE638E00D4038A /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A4AAAC092EFE638E00D4038A /* Then */; };
+		A4AAAC0D2EFE639800D4038A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A4AAAC0C2EFE639800D4038A /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A40142462EC8D45F00D174C4 /* PBXContainerItemProxy */ = {
+		A4AAAC162EFE65CF00D4038A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A4A640ED2EAB492200077FCA /* Project object */;
+			containerPortal = A4AAAB9F2EFE586800D4038A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A4A640F42EAB492200077FCA;
-			remoteInfo = Baemin;
+			remoteGlobalIDString = A4AAABA62EFE586800D4038A;
+			remoteInfo = Calculator;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A40142422EC8D45F00D174C4 /* BaeminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaeminTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4A640F52EAB492200077FCA /* Baemin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baemin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4AAABA72EFE586800D4038A /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4AAAC122EFE65CF00D4038A /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A4DA5F8D2EB4728B007D1B35 /* Exceptions for "Baemin" folder in "Baemin" target */ = {
+		A4AAABB92EFE586900D4038A /* Exceptions for "Calculator" folder in "Calculator" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Global/Info.plist,
+				Info.plist,
 			);
-			target = A4A640F42EAB492200077FCA /* Baemin */;
+			target = A4AAABA62EFE586800D4038A /* Calculator */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A40142432EC8D45F00D174C4 /* BaeminTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BaeminTests;
-			sourceTree = "<group>";
-		};
-		A4A640F72EAB492200077FCA /* Baemin */ = {
+		A4AAABA92EFE586800D4038A /* Calculator */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				A4DA5F8D2EB4728B007D1B35 /* Exceptions for "Baemin" folder in "Baemin" target */,
+				A4AAABB92EFE586900D4038A /* Exceptions for "Calculator" folder in "Calculator" target */,
 			);
-			path = Baemin;
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		A4AAAC132EFE65CF00D4038A /* CalculatorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CalculatorTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A401423F2EC8D45F00D174C4 /* Frameworks */ = {
+		A4AAABA42EFE586800D4038A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4AAAC0A2EFE638E00D4038A /* Then in Frameworks */,
+				A4AAAC0D2EFE639800D4038A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4A640F22EAB492200077FCA /* Frameworks */ = {
+		A4AAAC0F2EFE65CF00D4038A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A424C26C2EAE8F68006E0F1E /* SnapKit in Frameworks */,
-				A424C26F2EAE8F72006E0F1E /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A4A640EC2EAB492200077FCA = {
+		A4AAAB9E2EFE586800D4038A = {
 			isa = PBXGroup;
 			children = (
-				A4A640F72EAB492200077FCA /* Baemin */,
-				A40142432EC8D45F00D174C4 /* BaeminTests */,
-				A4A640F62EAB492200077FCA /* Products */,
+				A4AAABA92EFE586800D4038A /* Calculator */,
+				A4AAAC132EFE65CF00D4038A /* CalculatorTests */,
+				A4AAABA82EFE586800D4038A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A4A640F62EAB492200077FCA /* Products */ = {
+		A4AAABA82EFE586800D4038A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4A640F52EAB492200077FCA /* Baemin.app */,
-				A40142422EC8D45F00D174C4 /* BaeminTests.xctest */,
+				A4AAABA72EFE586800D4038A /* Calculator.app */,
+				A4AAAC122EFE65CF00D4038A /* CalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,105 +93,105 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A40142412EC8D45F00D174C4 /* BaeminTests */ = {
+		A4AAABA62EFE586800D4038A /* Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A40142482EC8D45F00D174C4 /* Build configuration list for PBXNativeTarget "BaeminTests" */;
+			buildConfigurationList = A4AAABBA2EFE586900D4038A /* Build configuration list for PBXNativeTarget "Calculator" */;
 			buildPhases = (
-				A401423E2EC8D45F00D174C4 /* Sources */,
-				A401423F2EC8D45F00D174C4 /* Frameworks */,
-				A40142402EC8D45F00D174C4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A40142472EC8D45F00D174C4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A40142432EC8D45F00D174C4 /* BaeminTests */,
-			);
-			name = BaeminTests;
-			packageProductDependencies = (
-			);
-			productName = BaeminTests;
-			productReference = A40142422EC8D45F00D174C4 /* BaeminTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A4A640F42EAB492200077FCA /* Baemin */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4A641082EAB492300077FCA /* Build configuration list for PBXNativeTarget "Baemin" */;
-			buildPhases = (
-				A4A640F12EAB492200077FCA /* Sources */,
-				A4A640F22EAB492200077FCA /* Frameworks */,
-				A4A640F32EAB492200077FCA /* Resources */,
+				A4AAABA32EFE586800D4038A /* Sources */,
+				A4AAABA42EFE586800D4038A /* Frameworks */,
+				A4AAABA52EFE586800D4038A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A4A640F72EAB492200077FCA /* Baemin */,
+				A4AAABA92EFE586800D4038A /* Calculator */,
 			);
-			name = Baemin;
+			name = Calculator;
 			packageProductDependencies = (
-				A424C26B2EAE8F68006E0F1E /* SnapKit */,
-				A424C26E2EAE8F72006E0F1E /* Then */,
+				A4AAAC092EFE638E00D4038A /* Then */,
+				A4AAAC0C2EFE639800D4038A /* SnapKit */,
 			);
-			productName = Baemin;
-			productReference = A4A640F52EAB492200077FCA /* Baemin.app */;
+			productName = Calculator;
+			productReference = A4AAABA72EFE586800D4038A /* Calculator.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A4AAAC112EFE65CF00D4038A /* CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4AAAC182EFE65CF00D4038A /* Build configuration list for PBXNativeTarget "CalculatorTests" */;
+			buildPhases = (
+				A4AAAC0E2EFE65CF00D4038A /* Sources */,
+				A4AAAC0F2EFE65CF00D4038A /* Frameworks */,
+				A4AAAC102EFE65CF00D4038A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4AAAC172EFE65CF00D4038A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A4AAAC132EFE65CF00D4038A /* CalculatorTests */,
+			);
+			name = CalculatorTests;
+			packageProductDependencies = (
+			);
+			productName = CalculatorTests;
+			productReference = A4AAAC122EFE65CF00D4038A /* CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A4A640ED2EAB492200077FCA /* Project object */ = {
+		A4AAAB9F2EFE586800D4038A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
-					A40142412EC8D45F00D174C4 = {
+					A4AAABA62EFE586800D4038A = {
 						CreatedOnToolsVersion = 26.0.1;
-						TestTargetID = A4A640F42EAB492200077FCA;
 					};
-					A4A640F42EAB492200077FCA = {
+					A4AAAC112EFE65CF00D4038A = {
 						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = A4AAABA62EFE586800D4038A;
 					};
 				};
 			};
-			buildConfigurationList = A4A640F02EAB492200077FCA /* Build configuration list for PBXProject "Baemin" */;
+			buildConfigurationList = A4AAABA22EFE586800D4038A /* Build configuration list for PBXProject "Calculator" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = A4A640EC2EAB492200077FCA;
+			mainGroup = A4AAAB9E2EFE586800D4038A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				A424C26A2EAE8F68006E0F1E /* XCRemoteSwiftPackageReference "SnapKit" */,
-				A424C26D2EAE8F72006E0F1E /* XCRemoteSwiftPackageReference "Then" */,
+				A4AAAC082EFE638E00D4038A /* XCRemoteSwiftPackageReference "Then" */,
+				A4AAAC0B2EFE639800D4038A /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = A4A640F62EAB492200077FCA /* Products */;
+			productRefGroup = A4AAABA82EFE586800D4038A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A4A640F42EAB492200077FCA /* Baemin */,
-				A40142412EC8D45F00D174C4 /* BaeminTests */,
+				A4AAABA62EFE586800D4038A /* Calculator */,
+				A4AAAC112EFE65CF00D4038A /* CalculatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A40142402EC8D45F00D174C4 /* Resources */ = {
+		A4AAABA52EFE586800D4038A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4A640F32EAB492200077FCA /* Resources */ = {
+		A4AAAC102EFE65CF00D4038A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -201,14 +201,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A401423E2EC8D45F00D174C4 /* Sources */ = {
+		A4AAABA32EFE586800D4038A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4A640F12EAB492200077FCA /* Sources */ = {
+		A4AAAC0E2EFE65CF00D4038A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -218,69 +218,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A40142472EC8D45F00D174C4 /* PBXTargetDependency */ = {
+		A4AAAC172EFE65CF00D4038A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A4A640F42EAB492200077FCA /* Baemin */;
-			targetProxy = A40142462EC8D45F00D174C4 /* PBXContainerItemProxy */;
+			target = A4AAABA62EFE586800D4038A /* Calculator */;
+			targetProxy = A4AAAC162EFE65CF00D4038A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A40142492EC8D45F00D174C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6B47X24XTW;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.BaeminTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baemin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Baemin";
-				XROS_DEPLOYMENT_TARGET = 26.0;
-			};
-			name = Debug;
-		};
-		A401424A2EC8D45F00D174C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6B47X24XTW;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.BaeminTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baemin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Baemin";
-				XROS_DEPLOYMENT_TARGET = 26.0;
-			};
-			name = Release;
-		};
-		A4A641092EAB492300077FCA /* Debug */ = {
+		A4AAABBB2EFE586900D4038A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -289,35 +235,29 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6B47X24XTW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Baemin/Global/Info.plist;
+				INFOPLIST_FILE = Calculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Baemin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A4A6410A2EAB492300077FCA /* Release */ = {
+		A4AAABBC2EFE586900D4038A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -326,35 +266,29 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6B47X24XTW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Baemin/Global/Info.plist;
+				INFOPLIST_FILE = Calculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Baemin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		A4A6410B2EAB492300077FCA /* Debug */ = {
+		A4AAABBD2EFE586900D4038A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,7 +326,7 @@
 				DEVELOPMENT_TEAM = 6B47X24XTW;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -418,7 +352,7 @@
 			};
 			name = Debug;
 		};
-		A4A6410C2EAB492300077FCA /* Release */ = {
+		A4AAABBE2EFE586900D4038A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -456,7 +390,7 @@
 				DEVELOPMENT_TEAM = 6B47X24XTW;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -475,32 +409,84 @@
 			};
 			name = Release;
 		};
+		A4AAAC192EFE65CF00D4038A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6B47X24XTW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Calculator";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		A4AAAC1A2EFE65CF00D4038A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6B47X24XTW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Calculator";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A40142482EC8D45F00D174C4 /* Build configuration list for PBXNativeTarget "BaeminTests" */ = {
+		A4AAABA22EFE586800D4038A /* Build configuration list for PBXProject "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A40142492EC8D45F00D174C4 /* Debug */,
-				A401424A2EC8D45F00D174C4 /* Release */,
+				A4AAABBD2EFE586900D4038A /* Debug */,
+				A4AAABBE2EFE586900D4038A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4A640F02EAB492200077FCA /* Build configuration list for PBXProject "Baemin" */ = {
+		A4AAABBA2EFE586900D4038A /* Build configuration list for PBXNativeTarget "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4A6410B2EAB492300077FCA /* Debug */,
-				A4A6410C2EAB492300077FCA /* Release */,
+				A4AAABBB2EFE586900D4038A /* Debug */,
+				A4AAABBC2EFE586900D4038A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4A641082EAB492300077FCA /* Build configuration list for PBXNativeTarget "Baemin" */ = {
+		A4AAAC182EFE65CF00D4038A /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4A641092EAB492300077FCA /* Debug */,
-				A4A6410A2EAB492300077FCA /* Release */,
+				A4AAAC192EFE65CF00D4038A /* Debug */,
+				A4AAAC1A2EFE65CF00D4038A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -508,15 +494,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A424C26A2EAE8F68006E0F1E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
-		A424C26D2EAE8F72006E0F1E /* XCRemoteSwiftPackageReference "Then" */ = {
+		A4AAAC082EFE638E00D4038A /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
 			requirement = {
@@ -524,20 +502,28 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		A4AAAC0B2EFE639800D4038A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A424C26B2EAE8F68006E0F1E /* SnapKit */ = {
+		A4AAAC092EFE638E00D4038A /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A424C26A2EAE8F68006E0F1E /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		A424C26E2EAE8F72006E0F1E /* Then */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A424C26D2EAE8F72006E0F1E /* XCRemoteSwiftPackageReference "Then" */;
+			package = A4AAAC082EFE638E00D4038A /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		A4AAAC0C2EFE639800D4038A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4AAAC0B2EFE639800D4038A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = A4A640ED2EAB492200077FCA /* Project object */;
+	rootObject = A4AAAB9F2EFE586800D4038A /* Project object */;
 }
