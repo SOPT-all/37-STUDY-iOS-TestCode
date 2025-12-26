@@ -34,6 +34,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				CalculatorApp.swift,
+				CalculatorButtonView.swift,
 				CalculatorModel.swift,
 				CalculatorView.swift,
 				CalculatorViewModel.swift,
@@ -44,6 +45,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				CalculatorApp.swift,
+				CalculatorButtonView.swift,
 				CalculatorModel.swift,
 				CalculatorView.swift,
 				CalculatorViewModel.swift,
